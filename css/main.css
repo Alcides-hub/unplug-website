@@ -1,6 +1,5 @@
-/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+/*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
 
-/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
 /*
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
@@ -11,622 +10,651 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-html {
-  color: #222;
-  font-size: 1em;
-  line-height: 1.4;
-}
-
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Vendor-prefixed and regular ::selection selectors cannot be combined:
- * https://stackoverflow.com/a/16982510/7133471
- *
- * Customize the background color to match your design.
- */
-
-::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-::selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-/*
- * A better looking default horizontal rule
- */
-
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
-}
-
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
-
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-  vertical-align: middle;
-}
-
-/*
- * Remove default fieldset styles.
- */
-
-fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
-
-/*
- * Allow only vertical resizing of textareas.
- */
-
-textarea {
-  resize: vertical;
-}
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-   /* ------------------ Base Header - Footer Styles ----------------*/
-   
-    .content-wrapper {
-      width: 90%;
-      margin: 50px 0; 
-    }
-
-   
-   header,
-   footer {
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       flex-flow: row wrap;
-   }
-
-   header {
-    padding: 15px 0px;
-   }
-
-   header .content-wrapper {
+   html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+  }
+  
+  /*
+   * Remove text-shadow in selection highlight:
+   * https://twitter.com/miketaylr/status/12228805301
+   *
+   * Vendor-prefixed and regular ::selection selectors cannot be combined:
+   * https://stackoverflow.com/a/16982510/7133471
+   *
+   * Customize the background color to match your design.
+   */
+  
+  ::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+  }
+  
+  ::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+  }
+  
+  /*
+   * A better looking default horizontal rule
+   */
+  
+  hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+  }
+  
+  /*
+   * Remove the gap between audio, canvas, iframes,
+   * images, videos and the bottom of their containers:
+   * https://github.com/h5bp/html5-boilerplate/issues/440
+   */
+  
+  audio,
+  canvas,
+  iframe,
+  img,
+  svg,
+  video {
+    vertical-align: middle;
+  }
+  
+  /*
+   * Remove default fieldset styles.
+   */
+  
+  fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /*
+   * Allow only vertical resizing of textareas.
+   */
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  /* ==========================================================================
+     Browser Upgrade Prompt
+     ========================================================================== */
+  
+  .browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+  }
+  
+  /* ==========================================================================
+     Author's custom styles
+     ========================================================================== */
+  
+  .content-wrapper {
+    width: 90%;
+    margin: 50px 0;
+  }
+  
+  /* -------------------- Base Header - Footer Styles -------------------- */
+  
+  header,
+  footer {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+  
+  header {
+    padding: 15px 0;
+  }
+  
+  header .content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-flow: row wrap;
     margin: 0;
-   }
-   
-   .header-divider {
+  }
+  
+  .header-divider {
     width: 100%;
     height: 1px;
     margin: 10px 0 20px 0;
   }
-
-   header nav {
+  
+  header nav {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-flow: row wrap;
     width: 60%;
-   }
-
-   header nav ul {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-   }
-
-   footer .content-wrapper {
-    width: 55%;
-    margin: 0;
+  }
   
-   }
-
-   footer {
+  header nav ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+  
+  footer {
     flex-direction: column;
-   }
-
-   footer .contact {
-    margin-bottom: 50px;
-   }
-
-   footer p {
+  }
+  
+  footer p {
     margin: 0;
-   }
-
-   
-   footer .social-icons {
+  }
+  
+  footer .content-wrapper {
+    width: 55%;
+    margin: 50px 0;
+  }
+  
+  footer .contact {
+    margin-bottom: 50px;
+  }
+  
+  footer .social-icons {
     display: flex;
     justify-content: space-around;
     align-items: center;
-   }
-
-   footer .social-icons p {
+  }
+  
+  footer .social-icons p {
     display: flex;
     justify-content: center;
     align-items: center;
-   }
-
-   footer .copyright {
+  }
+  
+  footer .copyright {
     margin: 20px 0;
-   }
-
-  /* ---------------------- Mobile Styles - Homepage -------------------*/
-
-  /* ------------------ Hero Area --------------*/
-   
+  }
+  
+  /* -------------------- Mobile Styles - Homepage -------------------- */
+  
+  /* Hero Area */
+  
   .hero-area {
     display: flex;
     justify-content: center;
-    flex-grow: row wrap;
-   }
-
-  /*------------------ Aside -------------------*/
-
-   aside {
-    display: flex; 
-    justify-content: center;
-    align-items: center;
     flex-flow: row wrap;
-   }
-
-  /* ----------------- Features ----------------- */ 
-
-   .features {
-    display: flex;
-    justify-content: center; 
-    flex-flow: row wrap;
+  }
   
-   }
-
-   .features .features-items {
+  /* Aside */
+  
+  aside {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-   }
-
-   .features .content-wrapper h2 {
+  }
+  
+  /* Features */
+  
+  .features {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+  }
+  
+  .features .content-wrapper h2 {
     margin-bottom: 60px;
-   }
-
-   .features article {
+  }
+  
+  .features article {
     width: 63%;
-    padding: 30px 0;
-   }
-
-   .features article p {
-    margin: 0px;
-   }
-
-   /* ----------------- Reviews ---------------*/
-
-   .reviews {
-    display: flex;
-    justify-content: center;
-    flex-flow: row wrap; 
-   }
-
-   .reviews h2 {
-    margin-bottom: 40px;
-   }
-
-   .reviews h3 {
-    width: 48%;
-    margin: 0px;
-    padding: 20px 0px;
-   }
-
-   .reviews p {
-    margin: 0px;
-   }
-
-   /* ===========================================================
-   About Page
-      =========================================================== */
-
-   .mission {
+    margin: 30px 0;
+  }
+  
+  .features .features-items {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-    text-align: left;
-   }
-
-   .contact-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-   }
-
-   .contact-content p {
+  }
+  
+  .features p {
     margin: 0;
-   }
-
-   /* ===============================================================
-      FAQ Page
-      ==============================================================*/
-
-   .faq {
+  }
+  
+  /* Reviews */
+  
+  .reviews {
     display: flex;
-    align-items: center;
     justify-content: center;
-    flex-flow: wrap row;
-   }
-
-   .faq .content-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-flow: wrap row;
-    margin: 50px 0 0 0;
-   }
-
-   .faq h2 {
+    flex-flow: row wrap;
+  }
+  
+  .reviews h2 {
     margin-bottom: 40px;
-   }
-
-   .faq-content {
+  }
+  
+  .reviews h3 {
+    width: 55%;
+    margin: 20px 0;
+  }
+  
+  /* ==========================================================================
+     About Page
+     ========================================================================== */
+  
+  .mission {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+  
+  .contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+  
+  .contact-content p {
+    margin: 0;
+  }
+  
+  /* ==========================================================================
+     FAQ Page
+     ========================================================================== */
+  
+  .faq {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+  
+  .faq .content-wrapper {
+    margin: 50px 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+  
+  .faq h2 {
+    margin-bottom: 40px;
+  }
+  
+  .faq-content {
     margin-bottom: 50px;
-   }
-
-/* ===========================================================
-   Breakpoints
-   =========================================================== */
-
-   /* ----------------- Breakpoint for tablets ---------------*/
-
-   @media only screen and (min-width: 768px) {
+  }
+  
+  /* ==========================================================================
+     Helper classes
+     ========================================================================== */
+  
+  /*
+   * Hide visually and from screen readers
+   */
+  
+  .hidden {
+    display: none !important;
+  }
+  
+  /*
+   * Hide only visually, but have it available for screen readers:
+   * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+   *
+   * 1. For long content, line feeds are not interpreted as spaces and small width
+   *    causes content to wrap 1 word per line:
+   *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+   */
+  
+  .visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap;
+    /* 1 */
+  }
+  
+  /*
+   * Extends the .visuallyhidden class to allow the element
+   * to be focusable when navigated to via the keyboard:
+   * https://www.drupal.org/node/897638
+   */
+  
+  .visuallyhidden.focusable:active,
+  .visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+  }
+  
+  /*
+   * Hide visually and from screen readers, but maintain layout
+   */
+  
+  .invisible {
+    visibility: hidden;
+  }
+  
+  /*
+   * Clearfix: contain floats
+   *
+   * For modern browsers
+   * 1. The space content is one way to avoid an Opera bug when the
+   *    `contenteditable` attribute is included anywhere else in the document.
+   *    Otherwise it causes space to appear at the top and bottom of elements
+   *    that receive the `clearfix` class.
+   * 2. The use of `table` rather than `block` is only necessary if using
+   *    `:before` to contain the top-margins of child elements.
+   */
+  
+  .clearfix:before,
+  .clearfix:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+  }
+  
+  .clearfix:after {
+    clear: both;
+  }
+  
+  /* ==========================================================================
+     EXAMPLE Media Queries for Responsive Design.
+     These examples override the primary ('mobile first') styles.
+     Modify as content requires.
+     ========================================================================== */
+  
+     @media only screen and (min-width:768px) {
+      /*Tablet styles here*/
     
-    /* ------------------ General Styles --------------*/
-
-
-    .content-wrapper {
-      max-width: 640px;
-      margin: 100px 0;
-    }
+      /* General styles */
+      .content-wrapper {
+        max-width: 640px;
+        margin: 100px 0;
+      }
     
-    /* ------------------ Header --------------*/
-
-    header {
-      justify-content: left;
-    }
-
-    header .content-wrapper {
-      justify-content: space-around;      
-      padding: 30px 0px;
-    }
-
-    header nav {
+      /* Header */
+      header {
+        justify-content: space-around;
+        padding: 33px 0;
+      }
+    
+      header .content-wrapper {
+        width: 100%;
+        justify-content: space-between;
+      }
+    
+      header nav {
+        width: 20%;
+      }
+    
+      header nav ul {
+        justify-content: space-between;
+      }
+    
+      .header-divider {
+        display: none;
+      }
+      /* Hero Area */
+    
+      /* Aside */
+      aside .content-wrapper {
+        margin: 50px 0;
+        display: flex;
+        justify-content: space-between;
+        flex-flow: row wrap;
+      }
+    
+      aside .content-wrapper .form-description,
+      aside .content-wrapper .form {
+        width: 40%;
+        margin: 0;
+      }
+    
+      /* Features */
+      .features article {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column wrap;
+        flex-basis: 50%;
+      }
       
-    }
-
-    header nav ul {
-      justify-content: flex-end;
-    }
-
-    .header-divider {
-      display: none;
-    }
-
-    /* ------------------ Hero Area --------------*/
-
-    /* ------------------ Aside --------------*/
-
-    aside .content-wrapper {
-      margin: 50px 0;
-      display: flex;
-      justify-content: space-around;
-      flex-flow: row nowrap;
-
-    }
-
-    aside .content-wrapper .form-description 
-    aside .content-wrapper .form {
-      width: ;
-      margin: 0;
-
-    }
+      .features .features-item-description {
+        width: 50%;
+      }
     
-    /* ------------------ Features --------------*/
-
-    .features article {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      flex-flow: wrap row;
-      flex-basis: 50%;
-      padding: 30px 0px;
+      /* Reviews */
+      .reviews article {
+        display: flex;
+        justify-content: space-between;
+      }
+    
+      .reviews article div {
+        width: 49%;
+      }
+    
+      /* Footer */
+      footer .content-wrapper {
+        width: 65%;
+        margin: 100px 0;
+      }
+    
+      .footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    
+      footer .contact {
+        margin-bottom: 0;
+      }
+    
+      footer .copyright {
+        width: 100%;
+      }
+    
+      /* ==========================================================================
+       About Page
+       ========================================================================== */
+    
+      .mission-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 20px
+      }
+    
+      .mission-content p {
+        width: 45%;
+      }
+    
+      .contact-section .content-wrapper h2 {
+        width: 80%;
+      }
+    
+      .contact-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+      }
+    
+      /* ==========================================================================
+       FAQ Page
+       ========================================================================== */
+    
+      .faq .content-wrapper {
+        justify-content: space-between;
+      }
+    
+      .faq-content {
+        flex-basis: 45%;
+      }
+    
+      .faq h2 {
+        width: 100%;
+      }
     }
 
-    .features .features-item-description {
+    @media only screen and (min-width:1200px) {
+      /*Desktop styles here*/
+      
+      /* General styles */
+      .content-wrapper {
+        max-width: 960px;
+      }
+      /* Header */
+      
+      header {
+        justify-content: space-around;
+      }
 
-    }
+      /* Hero Area */
 
-    /* ------------------ Reviews --------------*/
+      .hero-area h1 {
+        width: 56%;
+      }
+    
+      /* Aside */
 
-    .reviews article {
-      display: flex;
-      justify-content: flex-start;
-      padding: 15px 0px;
-    } 
+      aside .content-wrapper {
+        justify-content: space-around;
+      }
 
-    .reviews article div {
-      width: 
-    }
-   
-    /* ------------------ Footer --------------*/
-
-    footer .content-wrapper {
-      width: ;
-      margin: 100px 0px;
-    }
-
-    .footer-content {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-
-    }
-
-    footer .contact {
-      margin-bottom: 0;
-    }
-
-    footer .copyright {
-      width: 
-    }
+      aside .content-wrapper .form-description,
+      aside .content-wrapper .form {
+        width: 30%;
+      }
 
 
-    .faq-content {
-      flex-basis: 50%;    
-    }
+      /* Features */
 
-    /* ==========================================================================
-   About Page
-   ========================================================================== */
-    .content-wrapper {
-      margin: 100px 0;
-    }
+      .features h2  {
+        width: 70%;
 
-    .mission-content {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-    }
+      }
+      .features article {
+      flex-basis: 30%;
+      }
 
-    .mission-content p {
-      width: 49%;
-      padding-right: 20px;
-    }
+      /* Reviews */
 
-    .contact-section .content-wrapper h2 {
-      width: 65%;
-      padding-left: 60px;
-      padding-right: 195px;
-    }
+      .reviews article div {
+        width: 35%;
+      }
 
-    .contact-content {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-    }
+      /* ==========================================================================
+       About Page
+       ========================================================================== */
 
-    /* ==========================================================================
-   FAQ Page
-   ========================================================================== */
+       .mission h2,
+      .contact-section .content-wrapper h2 {
+        width: 80%;
+      }
 
-    .faq .content-wrapper {
-      justify-content: space-between;
-    }
+      /* ==========================================================================
+       FAQ Page
+       ========================================================================== */
 
-    .faq-content {
-      flex-basis: 40%;
-    }
+       .faq h2 {
+        width: 100%;
+       }
+      
 
-    .faq h2 {
-      width: 100%;
-    }
+      
 
 
 
-  /* ----------------- Breakpoint for desktops ---------------*/
 
-   @media only screen and (min-width: 1200px) {
 
-   }
 
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
 
-/*
- * Hide visually and from screen readers
- */
 
-.hidden,
-[hidden] {
-  display: none !important;
-}
 
-/*
- * Hide only visually, but have it available for screen readers:
- * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- *
- * 1. For long content, line feeds are not interpreted as spaces and small width
- *    causes content to wrap 1 word per line:
- *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
- */
-
-.sr-only {
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  /* 1 */
-}
-
-/*
- * Extends the .sr-only class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
-
-.sr-only.focusable:active,
-.sr-only.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  white-space: inherit;
-  width: auto;
-}
-
-/*
- * Hide visually and from screen readers, but maintain layout
- */
-
-.invisible {
-  visibility: hidden;
-}
-
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-
-.clearfix::before,
-.clearfix::after {
-  content: " ";
-  display: table;
-}
-
-.clearfix::after {
-  clear: both;
-}
-
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
-
-@media print,
+  @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
   (min-resolution: 1.25dppx),
   (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
-
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   https://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
-
-@media print {
-  *,
-  *::before,
-  *::after {
-    background: #fff !important;
-    color: #000 !important;
-    /* Black prints faster */
-    box-shadow: none !important;
-    text-shadow: none !important;
+    /* Style adjustments for high resolution devices */
   }
-
-  a,
-  a:visited {
-    text-decoration: underline;
+  
+  /* ==========================================================================
+     Print styles.
+     Inlined to avoid the additional HTTP request:
+     https://www.phpied.com/delay-loading-your-print-css/
+     ========================================================================== */
+  
+  @media print {
+    *,
+    *:before,
+    *:after {
+      background: transparent !important;
+      color: #000 !important;
+      /* Black prints faster */
+      -webkit-box-shadow: none !important;
+      box-shadow: none !important;
+      text-shadow: none !important;
+    }
+    a,
+    a:visited {
+      text-decoration: underline;
+    }
+    a[href]:after {
+      content: " (" attr(href) ")";
+    }
+    abbr[title]:after {
+      content: " (" attr(title) ")";
+    }
+    /*
+       * Don't show links that are fragment identifiers,
+       * or use the `javascript:` pseudo protocol
+       */
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+      content: "";
+    }
+    pre {
+      white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+      border: 1px solid #999;
+      page-break-inside: avoid;
+    }
+    /*
+       * Printing Tables:
+       * http://css-discuss.incutio.com/wiki/Printing_Tables
+       */
+    thead {
+      display: table-header-group;
+    }
+    tr,
+    img {
+      page-break-inside: avoid;
+    }
+    p,
+    h2,
+    h3 {
+      orphans: 3;
+      widows: 3;
+    }
+    h2,
+    h3 {
+      page-break-after: avoid;
+    }
   }
-
-  a[href]::after {
-    content: " (" attr(href) ")";
-  }
-
-  abbr[title]::after {
-    content: " (" attr(title) ")";
-  }
-
-  /*
-   * Don't show links that are fragment identifiers,
-   * or use the `javascript:` pseudo protocol
-   */
-  a[href^="#"]::after,
-  a[href^="javascript:"]::after {
-    content: "";
-  }
-
-  pre {
-    white-space: pre-wrap !important;
-  }
-
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
-
-  /*
-   * Printing Tables:
-   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
-   */
-  thead {
-    display: table-header-group;
-  }
-
-  tr,
-  img {
-    page-break-inside: avoid;
-  }
-
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
-  }
-
-  h2,
-  h3 {
-    page-break-after: avoid;
-  }
-}
-
