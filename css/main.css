@@ -97,6 +97,64 @@
      Author's custom styles
      ========================================================================== */
   
+    html {
+      font-size: 16px;
+    }
+     
+    body {
+
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1em;
+    }
+     
+    ul, 
+    ol {
+     font-family: 'Open Sans', sans-serif;
+     font-size: 1.125em;
+     text-transform: uppercase;
+     text-decoration: none;
+     list-style: none;
+    }
+     
+    a {
+      color: #e2e3ed;
+      text-decoration: none;
+    }
+     
+    h2 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 2.25em;
+      line-height: auto;
+    }
+
+    h3, 
+    h4 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.125em;
+    }
+ 
+    p {
+      line-height: 1.125;
+    }
+ 
+    img {
+ 
+    }
+ 
+    figure {
+ 
+    }
+
+    address {
+        font-size: 0.875em;
+        font-style:normal
+    }
+     
+    .content-wrapper {
+     
+    }
+    
+
   .content-wrapper {
     width: 90%;
     margin: 50px 0;
@@ -519,15 +577,12 @@
         max-width: 960px;
       }
       /* Header */
-      
-      header {
-        justify-content: space-around;
-      }
+
 
       /* Hero Area */
 
       .hero-area h1 {
-        width: 56%;
+        width: 60%;
       }
     
       /* Aside */
@@ -545,17 +600,17 @@
       /* Features */
 
       .features h2  {
-        width: 70%;
+        width: 90%;
 
       }
       .features article {
-      flex-basis: 30%;
+      flex-basis: 33%;
       }
 
       /* Reviews */
 
       .reviews article div {
-        width: 35%;
+        width: 42%;
       }
 
       /* ==========================================================================
@@ -564,7 +619,7 @@
 
        .mission h2,
       .contact-section .content-wrapper h2 {
-        width: 80%;
+        width: 95%;
       }
 
       /* ==========================================================================
