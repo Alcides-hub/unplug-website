@@ -157,11 +157,11 @@
     }
  
     img {
- 
+      width: 100%;
     }
  
     figure {
- 
+      margin: 0;
     }
 
     address {
@@ -188,6 +188,15 @@
   header {
     padding: 15px 0;
   }
+
+  header figure {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
   
   header .content-wrapper {
     display: flex;
@@ -270,6 +279,16 @@
     flex-flow: row wrap;
   }
 
+  .hero-area {
+    background: url('../img/jake-melara-30679-unsplash.jpg') center no-repeat #333;
+    background-size: cover;
+    min-height: 500px; /* sets the min height required for the image to look good */ 
+    display: flex;
+    justify-content: center;
+    /* align-items: center; why no align items?*/ 
+    flex-flow: row wrap;
+  }
+
 
   .hero-area h1 {
   font-family: 'Poppins', sans-serif;
@@ -321,6 +340,17 @@
     justify-content: center;
     flex-flow: row wrap;
   }
+
+  .features {
+    background: url('../img/rawpixel-800820-unsplash1.png') center no-repeat #333;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+
+
   
   .features .content-wrapper h2 {
     margin-bottom: 60px;
@@ -352,6 +382,14 @@
     background-color: #2a423a;
     display: flex;
     justify-content: center;
+    flex-flow: row wrap;
+  }
+
+  .reviews figure img {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-flow: row wrap;
   }
   
@@ -529,20 +567,30 @@
         font-size: 1.5em;
         line-height: 1.25;
       }
+
     
       /* Header */
       header {
         justify-content: space-around;
         padding: 33px 0;
       }
-    
+
+      header figure {
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row wrap;
+    }
+
+  
       header .content-wrapper {
         width: 100%;
         justify-content: space-between;
       }
     
       header nav {
-        width: 20%;
+        width: 30%;
       }
     
       header nav ul {
@@ -596,6 +644,14 @@
 
       .reviews h2 {
         width: 85%;
+      }
+
+      .reviews figure img {
+        width: 41%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row wrap;
       }
 
       .reviews article {
@@ -705,6 +761,14 @@
         padding: 15px 0;
         /* not sure why 15 px? */
       }
+
+      header figure {
+        width: 25%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row wrap;
+    }
       
       .content-wrapper {
         max-width: 960px;
@@ -764,6 +828,14 @@
 
       .reviews h2 {
         padding-bottom: 50px;
+      }
+
+      .reviews figure img {
+        width: 39%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row wrap;
       }
 
       .reviews article div {
