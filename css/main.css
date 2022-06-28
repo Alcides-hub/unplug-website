@@ -372,6 +372,11 @@
     margin-top: 30px;
   }
 
+  .features i {
+    font-size: 3.75em;
+          margin-bottom: 40px;
+  }
+
   .features h2 {
     margin-bottom: 60px;
   }
@@ -425,7 +430,7 @@
     padding-bottom: 125%; 
     overflow: hidden;
     position: relative;
-}
+    }
  
   .map iframe {
     width: 100%;
@@ -433,7 +438,7 @@
     position: absolute; 
     top: 0; 
     left: 0; 
-}
+    }
   
   /* ==========================================================================
      FAQ Page
@@ -712,6 +717,10 @@
       .mission-content p {
         width: 45%;
       }
+
+      .map figure {
+        padding-bottom: 45.5%; 
+        }
     
       .contact-section .content-wrapper h2 {
         width: 80%;
@@ -837,6 +846,11 @@
         width: 95%;
         font-size: 3em;
       }
+
+      .map figure {
+        padding-bottom: 37.5%; 
+        }
+
 
       .contact-content h4 {
         font-size: 1.875em;
