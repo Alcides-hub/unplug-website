@@ -263,6 +263,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color:#527158;
+
+  }
+
+  footer .social-icons i {
+    font-size: 1.3125em;
+    /* I am not sure how you got this size, please explain. */
   }
   
   footer .copyright {
@@ -703,6 +713,11 @@
         /* I am getting a different ratio 14/24 ?? */
       }
     
+      footer .social-icons  {
+        width: 12.5em;
+        justify-content: space-between;
+      }
+
       /* ==========================================================================
        About Page
        ========================================================================== */
