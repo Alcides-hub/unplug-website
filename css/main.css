@@ -245,7 +245,6 @@
   
   footer .content-wrapper {
     width: 55%;
-    margin: 50px 0;
     text-align: center;
   }
   
@@ -277,6 +276,7 @@
   
   footer .copyright {
     margin: 20px 0;
+    text-align:center;
   }
   
   /* -------------------- Mobile Styles - Homepage -------------------- */
@@ -359,8 +359,6 @@
     align-items: center;
     flex-flow: row wrap;
   }
-
-
   
   .features .content-wrapper h2 {
     margin-bottom: 60px;
@@ -380,6 +378,7 @@
   
   .features p {
     margin-top: 30px;
+    margin-bottom: 0px;
   }
 
   .features i {
@@ -388,7 +387,7 @@
   }
 
   .features h2 {
-    margin-bottom: 60px;
+    margin-top: 0px;
   }
   
   /* Reviews */
@@ -402,12 +401,17 @@
   
   .reviews h2 {
     margin-bottom: 40px;
+    margin-top: 0px;
     line-height: 1;
   }
   
   .reviews h3 {
     width: 55%;
     margin: 20px 0;
+  }
+
+  .reviews p {
+    margin: 0px;
   }
   
   /* ==========================================================================
