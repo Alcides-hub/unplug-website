@@ -575,7 +575,18 @@
      These examples override the primary ('mobile first') styles.
      Modify as content requires.
      ========================================================================== */
-  
+      @media only screen and (max-width: 400px) {
+        /* Very small screens */
+      }
+       
+      header nav {
+        width: 80%;
+      }
+     
+     
+     
+     
+     
      @media only screen and (min-width:768px) {
       /*Tablet styles here*/
     
@@ -971,5 +982,6 @@
     h2,
     h3 {
       page-break-after: avoid;
-    }
-  }
+    }  
+
+
